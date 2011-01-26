@@ -4,8 +4,10 @@
 version = "0.1"
 
 import sys
+
 import pygtk
 pygtk.require("2.0")
+
 import gtk
 import gtk.glade
 import gtkvnc

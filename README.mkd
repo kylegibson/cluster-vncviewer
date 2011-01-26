@@ -4,6 +4,16 @@ cluster-vncviewer
 cluster-vncviewer is an application for opening many (or just one) vnc 
 sessions simultaneously to multiple (or one) vnc server.
 
+The inspiration for this project comes from an existing 
+project called gtkvncviewer. 
+
 Pre-requisities
 -
+    apt-get install python-gtk2 
+    apt-get install python-glade2
     apt-get install python-gtk-vnc
+
+
+Running
+-
+    ./cluster-vncviewer.py host1:port:passwd host2:port:passwd ...
