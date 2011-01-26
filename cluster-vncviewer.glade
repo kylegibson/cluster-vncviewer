@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
+<!--Generated with glade3 3.4.5 on Tue Dec 30 18:20:21 2008 -->
+<glade-interface>
+  <widget class="GtkWindow" id="window">
+    <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+    <signal name="motion_notify_event" handler="on_window_motion_notify_event"/>
+    <signal name="delete_event" handler="on_window_delete_event"/>
+    <child>
+      <widget class="GtkVBox" id="vbox5">
+        <property name="visible">True</property>
+        <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+        <child>
+          <widget class="GtkHBox" id="toolbar">
+            <property name="visible">True</property>
+            <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+            <property name="spacing">5</property>
+            <child>
+              <widget class="GtkButton" id="disconnectButton">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+                <property name="label" translatable="yes">gtk-disconnect</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <property name="use_stock">True</property>
+                <property name="response_id">0</property>
+                <signal name="clicked" handler="on_disconnect_clicked"/>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="keysButton">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <property name="response_id">0</property>
+                <signal name="clicked" handler="on_keys_clicked"/>
+                <child>
+                  <widget class="GtkHBox" id="hbox4">
+                    <property name="visible">True</property>
+                    <child>
+                      <widget class="GtkImage" id="image4">
+                        <property name="visible">True</property>
+                        <property name="stock">gtk-edit</property>
+                      </widget>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="GtkLabel" id="label7">
+                        <property name="visible">True</property>
+                        <property name="label" translatable="yes">_Send keys</property>
+                        <property name="use_underline">True</property>
+                      </widget>
+                      <packing>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </widget>
+                </child>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkToggleButton" id="fullscreenButton">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="label" translatable="yes">gtk-fullscreen</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <property name="use_stock">True</property>
+                <property name="response_id">0</property>
+                <signal name="toggled" handler="on_fullscreen_toggled"/>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkLabel" id="window_label">
+                <property name="visible">True</property>
+                <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+                <property name="xalign">0.94999998807907104</property>
+                <property name="label" translatable="yes">label</property>
+                <property name="use_markup">True</property>
+              </widget>
+              <packing>
+                <property name="position">5</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="expand">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkHBox" id="toolbar_note">
+            <property name="visible">True</property>
+            <property name="events">GDK_ENTER_NOTIFY_MASK | GDK_STRUCTURE_MASK</property>
+            <property name="extension_events">GDK_EXTENSION_EVENTS_CURSOR</property>
+            <property name="has_tooltip">True</property>
+            <property name="tooltip_text">prout</property>
+            <child>
+              <widget class="GtkLabel" id="label5">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Toolbar</property>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkArrow" id="arrow1">
+                <property name="visible">True</property>
+                <property name="xalign">0.0099999997764825821</property>
+                <property name="arrow_type">GTK_ARROW_UP</property>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkScrolledWindow" id="scrolledwindow1">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+            <property name="hscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+            <property name="vscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+            <property name="shadow_type">GTK_SHADOW_ETCHED_IN</property>
+            <child>
+              <widget class="GtkViewport" id="viewport1">
+                <property name="visible">True</property>
+                <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+                <property name="resize_mode">GTK_RESIZE_QUEUE</property>
+                <property name="shadow_type">GTK_SHADOW_ETCHED_IN</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="GtkMenu" id="keysMenu">
+    <property name="visible">True</property>
+    <child>
+      <widget class="GtkImageMenuItem" id="CtrlEscmenuitem">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Ctrl+_Escape</property>
+        <property name="use_underline">True</property>
+        <signal name="activate" handler="on_CtrlEscmenuitem_activate"/>
+        <child internal-child="image">
+          <widget class="GtkImage" id="menu-item-image3">
+            <property name="visible">True</property>
+            <property name="stock">gtk-execute</property>
+          </widget>
+        </child>
+      </widget>
+    </child>
+    <child>
+      <widget class="GtkImageMenuItem" id="CtrlAltBackmenuitem">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Ctrl+Alt+_Backspace</property>
+        <property name="use_underline">True</property>
+        <signal name="activate" handler="on_CtrlAltBackmenuitem_activate"/>
+        <child internal-child="image">
+          <widget class="GtkImage" id="menu-item-image2">
+            <property name="visible">True</property>
+            <property name="stock">gtk-disconnect</property>
+          </widget>
+        </child>
+      </widget>
+    </child>
+    <child>
+      <widget class="GtkImageMenuItem" id="CtrlAltDelmenuitem">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Ctrl+Alt+_Delete</property>
+        <property name="use_underline">True</property>
+        <signal name="activate" handler="on_CtrlAltDelmenuitem_activate"/>
+        <child internal-child="image">
+          <widget class="GtkImage" id="menu-item-image1">
+            <property name="visible">True</property>
+            <property name="stock">gtk-dialog-authentication</property>
+          </widget>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</glade-interface>
