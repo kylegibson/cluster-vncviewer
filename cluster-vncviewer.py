@@ -145,6 +145,7 @@ if __name__ == "__main__":
 
 	for instance in instances:
 		instance.connect()
-	
-	gtk.main()
+		
+	if instances:
+		gtk.main()
 
